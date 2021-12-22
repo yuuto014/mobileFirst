@@ -106,7 +106,7 @@ main{
     background-color: var(--off-white);
 }
 
-.main-container{
+.main-table{
     width: 100%;
     height: auto;
     padding-top: 80px;
@@ -114,14 +114,14 @@ main{
     text-align: center;
 }
 
-.main-container__title{
+.main-table__title{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.main-container__background-img{
+.main-table__background-img{
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -132,14 +132,14 @@ main{
     background-repeat: no-repeat;
 }
 
-.main-container__title h2{
+.main-table__title h2{
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6ren;
     color: var(--black);
 }
-.main-container__title p {
+.main-table__title p {
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -253,4 +253,272 @@ main{
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: var(--warm-dark);
+}
+
+.main-product{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-dark);
+}
+
+.main-product__icon{
+    position: absolute;
+    height: 25px;
+    width: 40px;
+    background-image: url("../assets/img/logo.svg");
+    top: calc(0% - 12.5px);
+    left: calc(50% - 20px);
+}
+
+.main-product__title{
+    width: 90%;
+    min-width: 290px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.main-product__title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.main-product__title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;     
+}
+
+.product-container__card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+}
+
+.product-container__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-container__icon.icon--clock{
+    background-image: url("../assets/icons/clock.svg");
+}
+.product-container__icon.icon--eye{
+    background-image: url("../assets/icons/eye.svg");
+}
+.product-container__icon.icon--dollar{
+    background-image: url("../assets/icons/dollar-sign.svg");
+}
+.product-container__icon.icon--circle{
+    background-image: url("../assets/icons/check-circle.svg");
+}
+
+.product-container__title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--just-white);
+}
+.product-container__body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+    padding-bottom: 10px;
+}
+
+.main-img{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("../assets/img/bitcoinbaby2x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main-img h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--just-white);
+}
+
+.main-plans{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.main-plans__title{
+    width: 90%;
+    min-width: 290px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main-plans__title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--black);
+}
+
+.main-plans__title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color:#282623 #757575;
+}
+
+.main-plans__slider{
+    display: flex;
+    height: 320px;
+    overflow-x: scroll ;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x  proximity;
+}
+
+.main-plans__card{
+    position:relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 200px;
+    max-width: 250px;
+    height: 250px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(89,73,30,0.16);
+}
+
+.main-plans__card.card--ever{
+    color: var(--just-white);
+    background-color: var(--warm-dark);
+}
+
+.card__recomendado{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: calc(0% - 15px);
+    left: calc(50% - 60px);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding: 6px;
+    border-radius: 8px;
+    padding: 3px 2px;
+}
+.card--month .card__recomendado{
+    background-color: var(--secondary-blue);
+    color: var(--just-white);
+}
+.card--ever .card__recomendado{
+    background-color: var(--grey);
+    color: var(--warm-dark);
+}
+.card--year .card__recomendado{
+    background-color: var(--bitcoin-orange);
+    color:var(--just-white);
+}
+
+
+.card__description{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.card__description .card__title{
+    padding-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.card__description .card__price{
+    padding: 0 0 10px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.card__description  .card__price sup{
+    font-size: 1.2rem;
+    font-weight: 300; 
+    vertical-align: 30px;  
+}
+
+.card__saving{
+    font-size: 1.2rem;
+    color:#757575;
+}
+
+.card__ca{
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border-radius: 4px;
+    border: 1px solid var(--bitcoin-orange);
+    font-family: "DM sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.main-plans__card.card--ever .card__description .card__title{
+    color:var(--just-white);
+}
+.main-plans__card.card--ever .card__description .card__price{
+    color:var(--just-white);
+}
+
+
+.main-plans__card.card--ever .card__description .card__ca{
+    color: var(--just-white);
+    background-color: var(--black);
+}
+
+.card__ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
 }
