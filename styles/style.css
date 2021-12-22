@@ -312,10 +312,10 @@ main{
 .product-container__card{
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
-    height: auto;
+    max-width: 400px;
+    height: 150px;
     margin: 15px auto;
-    padding: 15px;
+    padding: 20px 10px;
     background-color: var(--black);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.16);
